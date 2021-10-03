@@ -8,10 +8,10 @@ function removeMessage() {
 const Message = () => {
 	console.log(localStorage)
 	return (
-		<div id="message">
-			<h1>This is an incorrect username or password.</h1>
+		<div className="messageUnderHeader">
+			<h3>This is an incorrect username or password.</h3>
 			{/* <h3 className="errorType">{localStorage.getItem("message")}</h3> */}
-			<Link to="/LogIn" onClick={removeMessage()}>Please try again</Link>
+			<Link to="/" onClick={removeMessage()}>Please try again</Link>
 		</div>
 	)
 }
